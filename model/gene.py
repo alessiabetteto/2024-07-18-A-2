@@ -13,3 +13,6 @@ class Gene:
 
     def __hash__(self):
         return hash((self.GeneID, self.Function))
+
+    def __eq__(self, other):
+        return (self.GeneID, self.Function) == (other.GeneID, other.Function)

@@ -38,7 +38,7 @@ class View(ft.UserControl):
 
         self.dd_max_ch = ft.Dropdown(label="Cromosoma max",
                                hint_text="Selezionare il valore massimo di cromosoma.", width=200)
-
+        self._controller.fillDDChromosomes()
         self.btn_graph = ft.ElevatedButton(text="Crea Grafo",
                                            tooltip="Crea il grafo",
                                            on_click=self._controller.handle_graph)
